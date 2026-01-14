@@ -1,0 +1,130 @@
+.about-container {
+  padding: 30px 0;
+  width: 90%;
+  color: var(--font-color-secondary);
+}
+
+.about-card {
+  grid-template-areas: 
+  "info image"
+  "contact-title contact-title"
+  "social social";
+  background-color: rgb(0,0,0);
+}
+
+.about-image {
+  grid-area: image;
+}
+
+.about-image img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+
+.filter-strip {
+  transform: translateX(5%);
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  background: rgba(215, 71, 235, 0.4);
+  /* background: rgba(84, 21, 112, 0.4); */
+  backdrop-filter: invert(90%);
+  /* clip-path: polygon(0 13%, 100% 35%, 100% 60%, 0 36%); */
+}
+
+.about-info {
+  grid-area: info;
+  padding: 15px 15px 0 15px;
+}
+
+.about-info {
+  font-family: 'Space Mono';
+}
+
+.contact-container {
+  grid-area: contact-title;
+}
+
+.contact-header {
+  padding-left: 20px;
+}
+
+.social-container {
+  grid-area: social;
+  padding: 15px 0;
+}
+
+.social-media {
+  border-radius: 15px;
+  background-color: rgba(84, 21, 112, 0.4);
+  width: 30%;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.social-media:hover {
+  border: 2px solid var( --accent-color);
+}
+
+.social-media:hover .social-image {
+  opacity: 0;
+}
+
+.social-media:hover .social-description {
+  opacity: 1;
+}
+
+.social-image {
+  width: 50px;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.social-description {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  opacity: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--font-color-secondary);
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .about-image {
+    padding-top: 15px;
+  }
+
+  .about-image img{
+    height: 250px;
+    width: auto;
+}
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-header {
+    padding-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+}

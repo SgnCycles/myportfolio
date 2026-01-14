@@ -1,0 +1,88 @@
+:root {
+  --body-color: #070A16;
+  --section-color: rgb(0, 0, 0);
+  --accent-color: #d747eb;
+  --font-color-primary: #edf1f1;
+  --font-color-secondary: #dad6d6;
+  --header-font: 'Orbitron';
+  --border-radius: 15px;
+  --header-height-desktop: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100dvh;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-color);
+}
+
+.nav-menu-item, .social-media, .project-card {
+cursor: url('../logos/finger.png'), pointer;
+}
+
+.header-logo, .about-subtitle, .contact-header, .social-description, .skills-header, .projects-container {
+  font-family: var(--header-font);
+}
+
+.header-icon {
+  color: #c2c6c7;
+  padding-left: 20px;
+}
+
+.nav-menu-item {
+  font-family: 'Space Mono';
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  padding: 7px;
+  position: relative;
+  background-color: var(--body-color);
+  text-decoration: none;
+  color: var( --font-color-primary);
+  height: 100%;
+}
+
+@property  --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.nav-menu-item:hover::after, .nav-menu-item:hover::before {
+  content: '';
+  position: absolute;
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
+  background-image: conic-gradient(from var(--angle), transparent 70%, var(--accent-color));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 2px;
+  animation: 3s spin linear infinite;
+}
+
+.nav-menu-item:hover::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  } 
+  to {
+    --angle: 360deg;
+  } 
+}
+
+.footer{
+  color: var(--font-color-primary);
+  font-family: var(--header-font);
+  letter-spacing: 3px;
+}

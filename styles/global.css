@@ -5,6 +5,7 @@
   --font-color-primary: #edf1f1;
   --font-color-secondary: #dad6d6;
   --header-font: 'Orbitron';
+  --text-font: 'Space Mono';
   --border-radius: 15px;
   --header-height-desktop: 5rem;
 }
@@ -18,25 +19,30 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: var(--body-color);
 }
 
-.nav-menu-item, .social-media, .project-card {
-cursor: url('../logos/finger.png'), pointer;
+.nav-menu-item, .social-media, .project-card, .card-icon, .project-image {
+  cursor: url('../logos/finger.png'), pointer;
 }
 
 .header-logo, .about-subtitle, .contact-header, .social-description, .skills-header, .projects-container {
   font-family: var(--header-font);
 }
 
+.nav-menu-item, .intro-paragraph, .about-info {
+  font-family: var(--text-font);
+}
+
+.main-intro-section, .about-container, .projects-container {
+  width: 90%;
+}
+
 .header-icon {
   color: #c2c6c7;
-  padding-left: 20px;
 }
 
 .nav-menu-item {
-  font-family: 'Space Mono';
   font-weight: normal;
   letter-spacing: 0.3rem;
   padding: 7px;

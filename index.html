@@ -22,15 +22,15 @@
   <script src="./scripts/sky.js" defer></script>
   <script src="./scripts/skills.js" defer></script>
   <script src="./scripts/projects.js" defer></script>
-  <title>Signe's Portfolio -Tailwind Develop</title>
+  <title>Signe's Portfolio</title>
 </head>
-<body class="flex flex-col min-h-[100dvh]">
+<body class="flex flex-col min-h-[100dvh] m-0">
   <header class="header flex justify-between w-full h-20 text-xl">
-    <div class="header-logo w-1/5 flex justify-start items-center pl-4 max-lg:pl-0">
-      <p class="header-icon">SB</ap>
+    <div class="header-logo w-1/6 flex justify-start items-center pl-4 max-lg:pl-0">
+      <p class="header-icon pl-4">SB</ap>
     </div>
-    <nav class="nav-wrapper w-2/5 flex justify-center items-center pr-4 max-lg:flex max-lg:items-center max-lg:justify-end max-lg:w-full" id="mobile-nav">
-      <ul class="nav-menu-list flex w-full justify-start z-50 max-lg:flex max-lg:flex-col max-lg:items-end max-lg:justify-start max-lg:fixed 2xl:justify-around">
+    <nav class="nav-wrapper w-2/6 flex justify-around items-center pr-4 min-lg:pr-14 max-lg:flex max-lg:items-center max-lg:justify-end max-lg:w-full" id="mobile-nav">
+      <ul class="nav-menu-list flex w-full justify-around z-60 max-lg:flex max-lg:flex-col max-lg:items-end max-lg:justify-start max-lg:fixed 2xl:justify-around">
         <li><a class="nav-menu-item" aria-current="false" href="/#about">About</a></li>
         <li><a class="nav-menu-item" aria-current="false" href="/#projects">Projects</a></li>
         <li><a class="nav-menu-item" aria-current="false" href="/#contact">Contact</a></li>
@@ -42,27 +42,26 @@
   </header>
   <main class="main grow flex flex-col items-center">
     <div class="main-intro-section h-[calc(100vh-6rem)] relative flex rounded-2xl">
-      <div class="intro-text absolute">
-        <h1 class="intro-subtitle">Your Future Front-End Developer</h1>
-        <p class="intro-paragraph">Welcome to my journey</p>
+      <div class="intro-text absolute h-full flex flex-col justify-center align-start text-nowrap pl-8 lg:pl-10 gap-10 z-50">
+        <h1 class="intro-subtitle text-wrap text-5xl md:text-7xl lg:text-8xl xl:text-6xl italic">Your Future Front-End Developer</h1>
+        <p class="intro-paragraph text-wrap text-m md:text-xl lg:text-3xl xl:text-2xl">Welcome to my journey</p>
       </div>
-      <div class="intro-layer absolute"></div>
-      <div class="intro-image-container absolute h-full">
+      <div class="intro-layer absolute z-40 right-0 h-full"></div>
+      <div class="intro-image-container absolute h-full z-30 right-0">
         <img src="./images/hero_image.webp" width="400px" height="auto" alt="Hero Image" fetchpriority="high">
       </div>
     </div>
     <section class="about-container flex justify-center items-center" id="about">
       <div class="about-card grid grid-cols[repeat(2,auto)] grid-rows[repeat(2,auto)] rounded-2xl gap-5 pt-6 max-lg:pt-0">
-        <div class="about-image flex justify-center items-center relative w-auto m-auto">
+        <div class="about-image h-full flex justify-center items-end relative w-auto m-auto">
           <img src="./images/profile_image.webp" height="300px" width="auto" alt="Signe's image">
-          <div class="filter-strip absolute z-10"></div>
         </div>
-        <div class="about-info m-0">
-          <h2 class="about-subtitle text-center text-4xl">Hi, I'm Signe</h2>
-          <p class="about-info flex flex-col justify-center items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla perspiciatis saepe, doloremque, adipisci mollitia magni non quam laboriosam cumque voluptate sit. Eveniet quisquam totam quasi delectus, voluptatum pariatur deleniti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum illo aliquid earum enim ut cumque veniam alias repellendus omnis dolore et quidem possimus, laborum, nostrum laboriosam beatae ducimus voluptatum!</p>
+        <div class="about-info m-0 leading-8">
+          <h2 class="about-subtitle text-left text-4xl pl-4">Hi, I'm Signe</h2>
+          <p class="about-info">and for 16 years I did magic on project and production management. Right now I am transfering great set of skills from this experience to my new career path becoming a full-stack developer at FUTUREGAMES school.</br>I thrive where others see obstacles, problems motivate me, spark my curiosity and push me to find solutions</br>My goal is to create visually impressive and user-friendly digital experiences, therefore design, curiosity, constant growth, experiment is part of my daily routine.</p>
         </div>
-        <div class="contact-container pt-5" id="contact">
-          <h2 class="contact-header text-3xl pb-5">You can find me here:</h2>
+        <div class="contact-container pt-1" id="contact">
+          <h2 class="contact-header text-3xl pb-5 pl-8">You can find me here:</h2>
           <div class="social-container w-full h-auto flex justify-around items-center">
           </div>
         </div>
@@ -70,11 +69,11 @@
     </section>
     <section class="skills-container w-full h-auto relative flex justify-center items-center overflow-hidden bg-transparent">
       <div class="skills-section h-full flex flex-col justify-around">
-        <h2 class="skills-header text-4xl text-center">Skills</h2>
+        <h2 class="skills-header text-4xl text-left pl-6">Skills</h2>
         <div class="skills-card-container grid h-full justify-center"></div>
       </div>
     </section>
-      <section class="projects-container h-auto rounded-2xl pt-6" id="projects">
+    <section class="projects-container h-auto rounded-2xl pt-6 pb-8" id="projects">
         <h2 class="projects-header text-center text-4xl">Projects</h2>
         <div class="projects-card-container w-full grid justify-center"></div>
     </section>

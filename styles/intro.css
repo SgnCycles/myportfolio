@@ -1,38 +1,23 @@
 .main-intro-section {
-  /* border-radius: var(--border-radius);
-  min-height: calc(100dvh - var(--header-height-desktop));
-  display: flex;
-  position: relative; */
-  width: 90%;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
 }
-
-/* .intro-image-container, .intro-layer, .intro-text {
-  position: absolute;
-} */
 
 .intro-image-container {
   border-radius: 15px 15px 15px 0;
-  /* height: 100%; */
   width: 50%;
-  z-index: 10;
   clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
-  right: 0;
 }
 
 .intro-image-container img{
   height: 100%;
   width: 100%;
-  border-radius: var(--border-radius);
+  border-radius: 15px 15px 15px 0;
   object-fit: cover;
   object-position: left center;
 }
 
 .intro-layer {
-  right: 0;
   width: 60%;
-  height: 100%;
-  z-index: 15;
   background-color: rgba(0,0,0, 0.5);
   transform: translate(-35%);
   clip-path: polygon(0 0, 87% 0, 69% 79%, 0 79%);
@@ -40,76 +25,14 @@
 
 .intro-text {
   width: 60%;
-  height: 100%;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-wrap: nowrap;
-  padding-left: 30px;
-  gap: 2rem;
 }
 
 .intro-subtitle {
   color: var(--accent-color);
   font-weight: 100;
   font-family: 'Tourney Condensed';
-  font-style: italic;
-  font-size: 3rem;
-}
-
-.intro-paragraph {
-  color: #dad6d6;
-  font-family: 'Space Mono';
-  text-wrap: wrap;
-  font-size: 1.3rem;
-  /* align-self: flex-end; */
-}
-
-/* .intro-image-container {
-  border-radius: 15px 15px 15px 0;
-  background-image: url(../images/hero_image.webp);
-  width: 50%;
-  clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
-} */
-
-/* .intro-layer {
-  width: 60%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: translate(-35%);
-  clip-path: polygon(0 0, 87% 0, 69% 79%, 0 79%);
-}
-
-.intro-text {
-  width: 60%;
-  padding-left: 20px;
-}
-
-.intro-subtitle {
-  color: var(--accent-color);
-  font-weight: 100;
-  font-family: 'Tourney Condensed';
-  font-style: italic;
-  text-align: left;
 }
 
 .intro-paragraph {
   color: var(--font-color-secondary);
-  font-family: 'Space Mono';
-} */
-
-@media (min-width: 340px) and (max-width: 1024px) {
-
-  .intro-text {
-    text-wrap: wrap;
-  }
-
-  .intro-subtitle{
-    font-size: 2.5rem;
-  }
-
-  .intro-paragraph {
-    font-size: 1rem;
-  }
 }

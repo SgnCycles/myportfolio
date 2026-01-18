@@ -24,15 +24,15 @@ body {
   background-color: var(--body-color);
 }
 
-.nav-menu-item, .social-media, .project-card, .card-icon, .project-image {
-  cursor: url('../icons/finger.png'), pointer;
+.nav-menu-item a, .social-media, .project-card, .card-icon, .project-image {
+  cursor: url('../icons/finger.webp'), pointer;
 }
 
 .header-logo, .about-subtitle, .contact-header, .social-description, .skills-header, .projects-container {
   font-family: var(--header-font), Arial, Helvetica, sans-serif;
 }
 
-.nav-menu-item, .intro-paragraph, .about-info {
+.nav-menu-item a, .intro-paragraph, .about-info {
   font-family: var(--text-font), Arial, Helvetica, sans-serif;
 }
 
@@ -49,14 +49,14 @@ body {
   justify-content: flex-end;
   align-items: center;
   width: 40%;
-  padding-right: 4rem;
+  padding-right: 3rem;
 }
 
 .nav-menu-list {
   width: 100%;
 }
 
-.nav-menu-item {
+.nav-menu-item a{
   height: 100%;
   position: relative;
   padding: 7px;
@@ -65,6 +65,7 @@ body {
   letter-spacing: 0.3rem;
   text-decoration: none;
   color: var(--font-color-primary);
+  font-size: 1.3rem;
 }
 
 @property  --angle {
@@ -73,7 +74,7 @@ body {
   inherits: false;
 }
 
-.nav-menu-item:hover::after, .nav-menu-item:hover::before {
+.nav-menu-item a:hover::after, .nav-menu-item a:hover::before {
   content: '';
   position: absolute;
   height: calc(100% + 2px);
@@ -87,7 +88,7 @@ body {
   animation: 3s spin linear infinite;
 }
 
-.nav-menu-item:hover::before {
+.nav-menu-item a:hover::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }

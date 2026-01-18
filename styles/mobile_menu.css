@@ -64,10 +64,10 @@
 
   .nav-menu-item {
     background-color: transparent;
-    padding-right: 1rem;
   }
 
   .nav-menu-item a {
+    background-color: transparent;
     text-decoration: none;
     color: var(--font-color-primary);
     font-size: 1.4rem;

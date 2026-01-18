@@ -12,12 +12,12 @@
 }
 
 .project-card {
-  border: 2px solid transparent;
-  align-items: center;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 15px;
   padding: 30px;
   color: #cba6a6;
   background-color: rgba(84, 21, 112, 0.4);
@@ -26,7 +26,6 @@
 
 .project-card:hover {
   border: 2px solid var(--accent-color);
-  /* background-color: rgba(84, 21, 112, 0.8); */
 }
 
 .project-card-image {
@@ -38,6 +37,7 @@
 .project-image {
   height: 100%;
   width: 100%;
+  border: 2px solid transparent;
   object-fit: cover;
   display: block;
 }
@@ -61,20 +61,19 @@
   border: 2px solid var( --accent-color);
 }
 
-@media (min-width: 340px) and (max-width: 1024px) {
+@media (min-width: 340px) and (max-width: 1280px) {
+
   .projects-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .project-card {
     padding: 30px 10px;
   }
 
-  .project-card-title {
-    font-size: 0.8rem;
-  }
-
-  .card-icon {
-  height: 40px;
+  .project-image {
+    height: 90%;
+    width: 90%;
+    place-self: center;
   }
 }

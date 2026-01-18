@@ -26,7 +26,9 @@ socialMediaIconsContainer.forEach(icon => {
   description.classList.add('social-description');
 
   image.src = icon.image;
-  image.alt = '';
+  image.alt = icon.alt;
+  image.width = 40;
+  image.height = 40;
   link.href = icon.link;
   link.target = '_blank';
   link.rel = 'noopener noreferrer';

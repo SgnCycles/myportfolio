@@ -17,7 +17,6 @@ document.querySelectorAll('.nav-menu-list a').forEach(link => {
 navMenuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     navMenuItems.forEach(nav => nav.setAttribute('aria-current', 'false'));
-
     item.setAttribute('aria-current', 'true')
   });
 });

@@ -34,6 +34,5 @@ bubble.animate(
     direction: 'alternate'
   }
 )
-
   skillsContainer.appendChild(bubble);
 }

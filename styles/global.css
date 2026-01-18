@@ -4,8 +4,10 @@
   --accent-color: #d747eb;
   --font-color-primary: #edf1f1;
   --font-color-secondary: #dad6d6;
+  --intro-header-font: 'Tourney Condensed';
   --header-font: 'Orbitron';
   --text-font: 'Space Mono';
+  --skills-font: 'Google Sans Code';
   --border-radius: 15px;
   --header-height-desktop: 5rem;
 }
@@ -23,15 +25,15 @@ body {
 }
 
 .nav-menu-item, .social-media, .project-card, .card-icon, .project-image {
-  cursor: url('../logos/finger.png'), pointer;
+  cursor: url('../icons/finger.png'), pointer;
 }
 
 .header-logo, .about-subtitle, .contact-header, .social-description, .skills-header, .projects-container {
-  font-family: var(--header-font);
+  font-family: var(--header-font), Arial, Helvetica, sans-serif;
 }
 
 .nav-menu-item, .intro-paragraph, .about-info {
-  font-family: var(--text-font);
+  font-family: var(--text-font), Arial, Helvetica, sans-serif;
 }
 
 .main-intro-section, .about-container, .projects-container {
@@ -42,15 +44,27 @@ body {
   color: #c2c6c7;
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  padding-right: 4rem;
+}
+
+.nav-menu-list {
+  width: 100%;
+}
+
 .nav-menu-item {
+  height: 100%;
+  position: relative;
+  padding: 7px;
+  background-color: var(--body-color);
   font-weight: normal;
   letter-spacing: 0.3rem;
-  padding: 7px;
-  position: relative;
-  background-color: var(--body-color);
   text-decoration: none;
-  color: var( --font-color-primary);
-  height: 100%;
+  color: var(--font-color-primary);
 }
 
 @property  --angle {
@@ -89,6 +103,12 @@ body {
 
 .footer{
   color: var(--font-color-primary);
-  font-family: var(--header-font);
+  font-family: var(--header-font), Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
+}
+
+@media (min-width: 1600px) {
+  .nav-wrapper {
+  width: 30%;
+  }
 }

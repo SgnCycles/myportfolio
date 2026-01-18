@@ -3,8 +3,8 @@
 }
 
 .intro-image-container {
-  border-radius: 15px 15px 15px 0;
   width: 50%;
+  border-radius: 15px 15px 15px 0;
   clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
@@ -30,7 +30,7 @@
 .intro-subtitle {
   color: var(--accent-color);
   font-weight: 100;
-  font-family: 'Tourney Condensed';
+  font-family: var(--intro-header-font), Arial, Helvetica, sans-serif;
 }
 
 .intro-paragraph {

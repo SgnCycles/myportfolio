@@ -58,6 +58,7 @@ projects.forEach(project => {
   icon.classList.add('card-icon');
 
   image.src = `https://api.microlink.io/?url=${project.homepage}&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1920&viewport.height=1080`;
+  image.onerror = () => {image.src = '../images/project_fallback.webp'};
   image.alt = `${project.description} image`;
   image.width = 100;
   image.height = 100;

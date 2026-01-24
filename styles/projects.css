@@ -30,6 +30,9 @@
 
 .project-card-image {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }

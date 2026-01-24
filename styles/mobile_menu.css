@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 340px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
 
   .hamburger {
     display: flex;

@@ -1,6 +1,6 @@
 const skillsSection = document.querySelector('.skills-card-container');
 
-const listOfSkills = ['HTML', 'CSS', 'Sass', 'Javascript', 'Version Control', 'Git', 'GitHub', 'Responsive Design', 'jQuery', 'Tailwind', 'APIs'];
+const listOfSkills = ['HTML', 'CSS', 'Javascript', 'Typescript', 'Version Control', 'Git', 'GitHub', 'React', "Nextjs", 'Tailwind', 'APIs'];
 
 
 listOfSkills.forEach(skill => {

@@ -15,15 +15,16 @@ const callGithubApi = async () => {
     const filteredProjects = data.filter(repository => repository.topics?.includes('portfolio') && repository.visibility === 'public');
 
     const newRepoId = filteredProjects.map(repository => repository.id);
+    console.log(newRepoId);
 
-    for (let i = projects.length -1; i >= 0; i--) {
-      if(!newRepoId.includes(projects[i].id)) {
-        projects.splice(i, 1);
+    for (let i = projects.length - 1; i >= 0; i--) {
+      if(!newRepoId.includes(projects[i].id)) { //if does not include
+        projects.splice(i, 1); //remove one item
       }
     }
 
     filteredProjects.forEach(repository => {
-      if (!projects.some(project =>project.id === repository.id)) {
+      if (!projects.some(project => project.id === repository.id)) { //if the repo projects does not have the id, push it in the array
         projects.push(repository);
       }
     });
